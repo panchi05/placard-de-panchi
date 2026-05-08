@@ -411,9 +411,25 @@ footer {
 
 @media (max-width: 640px) {
   .win95-popup {
-    top: 0.65rem;
-    right: 0.65rem;
-    width: min(250px, 88vw);
+    top: 0.5rem;
+    right: 0.5rem;
+    width: min(200px, 80vw);
+  }
+
+  .win95-titlebar {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.3rem;
+  }
+
+  .win95-controls span {
+    width: 0.85rem;
+    height: 0.85rem;
+    font-size: 0.6rem;
+  }
+
+  .win95-content {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
   }
 
   .screen {
