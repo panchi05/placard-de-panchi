@@ -102,7 +102,7 @@ body {
 
 .win95-popup {
   position: fixed;
-  top: 1rem;
+  bottom: 1rem;
   right: 1rem;
   width: min(290px, 88vw);
   border: 2px solid #101010;
@@ -411,7 +411,7 @@ footer {
 
 @media (max-width: 640px) {
   .win95-popup {
-    top: 0.5rem;
+    bottom: 0.5rem;
     right: 0.5rem;
     width: min(200px, 80vw);
   }

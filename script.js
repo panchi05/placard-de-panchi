@@ -103,3 +103,14 @@ if (gifPopupClose && gifPopup) {
     gifPopup.classList.remove("is-visible");
   });
 }
+
+// Make win95 popup closeable
+const win95Popup = document.querySelector(".win95-popup");
+const closeButton = document.querySelector(".win95-controls span:last-child");
+
+if (win95Popup && closeButton) {
+  closeButton.style.cursor = "pointer";
+  closeButton.addEventListener("click", () => {
+    win95Popup.style.display = "none";
+  });
+}
