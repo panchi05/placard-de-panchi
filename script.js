@@ -22,8 +22,53 @@ const items = [
     size: "32",
     price: "$20",
     condition: "Excelente",
-    description: "Corte recto. Poco usado.",
+    description: "Corte recto. Poco uso.",
     image: "lut.png",
+    sold: false
+  },
+  {
+    name: "Jean Lee",
+    size: "36",
+    price: "$20",
+    condition: "Muy bueno",
+    description: "Relaxed fit.",
+    image: "lee.png",
+    sold: false
+  },
+  {
+    name: "Jean Wrangler",
+    size: "34",
+    price: "$20",
+    condition: "Excelente",
+    description: "Slim fit.",
+    image: "wrangler.png",
+    sold: false
+  },
+  {
+    name: "Chomba Polo",
+    size: "M",
+    price: "$13",
+    condition: "Excelente",
+    description: "100% algodón. Color salmón.",
+    image: "chomba.png",
+    sold: false
+  },
+  {
+    name: "Buzo Leutthe",
+    size: "S",
+    price: "$12",
+    condition: "Bueno",
+    description: "Levemente decolorado.",
+    image: "buzo.png",
+    sold: false
+  },
+  {
+    name: "Buzo Elk",
+    size: "S",
+    price: "$15",
+    condition: "Muy bueno",
+    description: "Cintura ajustada. Boxy fit.",
+    image: "elk.png",
     sold: false
   },
   {
