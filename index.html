@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El placard de Panchi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="gif-bg" aria-hidden="true"></div>
+  <div class="gif-click-popup" role="dialog" aria-modal="true" aria-labelledby="gif-popup-title">
+    <div class="gif-click-popup-inner">
+      <p id="gif-popup-title">Ricardito</p>
+      <button type="button" class="gif-popup-close">Cerrar</button>
+    </div>
+  </div>
+
+  <aside class="win95-popup" aria-label="Promo popup">
+    <div class="win95-titlebar">
+      <span class="win95-title">panchi.exe</span>
+      <div class="win95-controls" aria-hidden="true">
+        <span>_</span>
+        <span>[]</span>
+        <span>X</span>
+      </div>
+    </div>
+    <div class="win95-content">
+      <p><u>Nuevo drop disponible</u></p>
+      <p>Ropa facherita imperdible!!!</p>
+    </div>
+  </aside>
+
+  <div class="screen">
+    <header class="hero">
+      <p class="blink">online now</p>
+      <h1>EL PLACARD DE PANCHI</h1>
+      <p class="tagline">Mandame si te interesa algo :P</p>
+    </header>
+
+    <main>
+      <section class="section-title-wrap">
+      </section>
+      <section id="items-grid" class="items-grid" aria-live="polite"></section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="https://instagram.com/francisconoblia" target="_blank" rel="noreferrer">IG</a>
+        <a href="mailto:francisco.noblia7@gmail.com">francisco.noblia7@gmail.com</a>
+        <a href="tel:2346-605362">2346-605362</a>
+      </div>
+    </footer>
+  </div>
+
+  <template id="item-template">
+    <article class="item-card">
+      <div class="item-image-wrap">
+        <img class="item-image" src="" alt="">
+        <span class="item-status"></span>
+      </div>
+      <div class="item-content">
+        <h3 class="item-name"></h3>
+        <p class="item-meta"></p>
+        <p class="item-description"></p>
+        <div class="item-footer">
+          <p class="item-price"></p>
+          <a class="item-contact" href="https://instagram.com/francisconoblia" target="_blank" rel="noreferrer">Me gusta</a>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
