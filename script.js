@@ -56,6 +56,11 @@ if (grid && template) {
 
     image.src = item.image;
     image.alt = `${item.name} preview`;
+    image.style.cursor = "pointer";
+    image.addEventListener("click", () => {
+      openImagePopup(item.image, item.name);
+    });
+
     status.textContent = item.sold ? "VENDIDA" : "DISPONIBLE";
     status.style.color = item.sold ? "#ff8aa6" : "#7aff9f";
     status.style.borderColor = item.sold ? "#ff8aa6" : "#7aff9f";
@@ -114,3 +119,38 @@ if (win95Popup && closeButton) {
     win95Popup.style.display = "none";
   });
 }
+
+// Image popup functionality
+const imagePopup = document.querySelector(".image-popup");
+const imagePopupImg = document.querySelector(".image-popup-img");
+const imagePopupClose = document.querySelector(".image-popup-close");
+const imagePopupOverlay = document.querySelector(".image-popup-overlay");
+
+function openImagePopup(src, alt) {
+  if (imagePopup && imagePopupImg) {
+    imagePopupImg.src = src;
+    imagePopupImg.alt = alt;
+    imagePopup.classList.add("is-visible");
+  }
+}
+
+function closeImagePopup() {
+  if (imagePopup) {
+    imagePopup.classList.remove("is-visible");
+  }
+}
+
+if (imagePopupClose) {
+  imagePopupClose.addEventListener("click", closeImagePopup);
+}
+
+if (imagePopupOverlay) {
+  imagePopupOverlay.addEventListener("click", closeImagePopup);
+}
+
+// Close image popup with Escape key
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && imagePopup?.classList.contains("is-visible")) {
+    closeImagePopup();
+  }
+});
